@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<script type="text/javascript" src="product.js"></script>
+          <script type="text/javascript">
+          // loadCart();
+          // function update() {
+
+          // 	var numOfItems = document.getElementById("a1").attributes.length;
+          // 	return numOfItems;
+          // }
+          	// $(".add-to-cart").click(function(event){
+           //      event.preventDefault();
+           //      var name = $(this).attr("data-name");
+           //      var price = Number($(this).attr("data-price"));
+           //      addItemToCart(name, price, 1);
+           //      displayCart();
+           //  });
+
+
+		function displayCart() {
+			var cartArray = listCart();
+			var output = "";
+			var price = "";
+			for(var i in cartArray) {
+				// price = cartArray[i].price*cartArray[i].qty;
+				output += "<li>"+cartArray[i].name+" - Price: "+cartArray[i].qty+"</li>"
+			
+			}
+				 document.getElementById("show-cart").innerHTML += output;	
+		}
+          </script>			
+		</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Online Car Showroom</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<p>Cart</p>
+		<div>
+			<ul id="show-cart">
+					<!--  -->
+			</ul>
+		</div>		
+		<button onClick="displayCart();" class="btn">Update Cart</button>	
+	</body>
+</html>

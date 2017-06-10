@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+	<title>Contact Us</title>
+</head>
+<style type="text/css">
+	body{
+	width:100%;
+	height:100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+
+h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+</style>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="carwar.html">CarWar</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="carwar.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" onclick="clearCart();">Clear Cart</a></li>
+        <li><a href="carwar.html#cart">Cart <i class="glyphicon glyphicon-shopping-cart Try it"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="contact" class="content-section text-center" style="margin-top: -20px;">
+        <div class="contact-section">
+            <div class="container">
+              <h2>Contact Us</h2>
+              <p>Feel free to shout us by filling the contact form.</p>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <form class="form-horizontal" action="https://formspree.io/immrizwanss@gmail.com" method="POST">
+                    <div class="form-group">
+                      <label for="InputName1">Name</label>
+                      <input type="text" class="form-control" id="InputName1" placeholder="Your Name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputEmail2">Email</label>
+                      <input type="email" class="form-control" id="InputEmail2" placeholder="youremail@example.com" name="_replyto">
+                    </div>
+                    <div class="form-group ">
+                      <label for="InputText">Your Message</label>
+                     <textarea  class="form-control" placeholder="Description"></textarea> 
+                    </div>
+                    <button type="submit" class="btn btn-default" value="Send">Send Message</button>
+                  </form>
+
+                 <!--  <hr>
+                    <h3>Our Social Sites</h3>
+                  <ul class="list-inline banner-social-buttons">
+                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="product.js"></script>
+</body>
+</html>
